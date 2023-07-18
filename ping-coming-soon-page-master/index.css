@@ -1,0 +1,126 @@
+
+
+body{
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+}
+
+
+.text{
+  color: hsl(0, 0%, 59%);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.soon{
+  color: black;
+}
+
+
+.subscribe{
+  font-size: .8rem;
+  margin-bottom: 2rem;
+}
+
+.my-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+#email{
+  width: 23rem;
+  height: 2rem;
+  text-indent: 1rem;
+  border-radius: 1rem;
+  border: 0.01rem solid hsl(223, 100%, 88%);
+}
+
+#email::placeholder{
+  color: hsl(223, 100%, 88%);
+}
+
+.my-button{
+  width: 8rem;
+  height: 2.2rem;
+  background-color:  hsl(223, 87%, 63%);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+}
+
+.photo{
+  width: 27rem;
+  margin-bottom: 4rem;
+}
+
+.end{
+  color: gray;
+}
+
+
+@media (max-width: 41rem) {
+  .text{
+    font-size: 2rem;
+  }
+
+  .my-form{
+    flex-direction: column;
+  }
+
+  #email{
+    width: 20rem;
+  }
+
+  .my-button{
+    width: 20rem;
+  }
+
+  .photo{
+    width: 22rem;
+  }
+
+  .end{
+    font-size: 0.8rem;
+  }
+}
+
+.for-error input:focus{
+  outline: 0;
+}
+
+.for-error.success input{
+  border-color: green;
+}
+
+.for-error.error input{
+  border-color: red;
+}
+
+.for-error .error{
+  color: red;
+}
+
+.error{
+  font-size: .7rem;
+}
+
+/* .for-error{
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+} */
